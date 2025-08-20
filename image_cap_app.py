@@ -44,3 +44,10 @@ This works for a bunch of common types:
 "label" → gr.Label() (for classification outputs)
 "audio" → gr.Audio()
 '''
+
+# Start the web app by calling the launch() method:
+iface.launch()
+
+'''TO RUN:
+python3 image_cap_app.py
+'''

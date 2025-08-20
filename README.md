@@ -14,3 +14,13 @@ Gradio is an open-source Python package that allows you to quickly build a demo 
 - source venv/bin/activate # Linux/Mac
 - venv\Scripts\activate # Windows
 - pip install -r requirements.txt
+
+## Running the Project
+
+1. Run in terminal (BLIP model only)
+   To generate captions directly in the terminal using BLIP, run:
+   python3 image_cap.py
+2. Run with Gradio (web app)
+   To launch the Gradio web app for image captioning, run:
+   python3 image_cap_app.py
+   After launching, open the link shown in your terminal (by default, http://localhost:7860/) in your browser.

@@ -30,6 +30,11 @@ caption = processor.decode(outputs[0], skip_special_tokens=True)
 print(caption)
 
 
+'''TO RUN:
+python3 image_cap.py
+'''
+
+
 
 
 '''"AutoProcessor" and "BlipForConditionalGeneration" are components of the BLIP model, which is a vision-language model available in the Hugging Face Transformers library.
