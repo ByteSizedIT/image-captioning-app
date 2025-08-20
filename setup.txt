@@ -1,0 +1,26 @@
+'''
+PINING python version to venv to enable torch to be recognised (needed python 3.10...)
+ref :https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/16108#issuecomment-2363573409
+
+❯ which -a python python3 
+/Users/nkeemer/.pyenv/shims/python 
+/Users/nkeemer/.pyenv/shims/python3 
+/usr/local/bin/python3 
+/usr/bin/python3  
+# output tells us on macOS with pyenv plus two system-wide Pythons (Homebrew at /usr/local/bin/python3 and Apple’s at /usr/bin/python3). To see exactly what you’ve got and use a specific one:
+
+# All Python versions pyenv knows about (installed + active)
+pyenv versions
+
+# Which version pyenv is using in THIS directory
+pyenv version
+
+# Check the two non-pyenv interpreters directly
+/usr/local/bin/python3 --version
+/usr/bin/python3 --version
+
+
+~/.pyenv/versions/3.10.13/bin/python -m venv .venv
+source .venv/bin/activate
+python --version   # → Python 3.10.13
+pip install langchain==0.1.11 gradio==5.23.2 transformers==4.38.2 bs4==0.0.2 requests==2.31.0 torch==2.2.1'''
