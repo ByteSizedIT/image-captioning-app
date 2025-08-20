@@ -20,5 +20,27 @@ def caption_image(input_image: np.ndarray):
 
     # Decode the generated tokens to text and store it into `caption`
     caption = processor.decode(outputs[0], skip_special_tokens=True)
-    
+
     return caption
+
+iface = gr.Interface(
+    fn=caption_image, 
+    inputs=gr.Image(), 
+    outputs="text",
+    title="Image Captioning",
+    description="This is a simple web app for generating captions for images using a trained model."
+)
+'''
+gr.Image() is a function call that creates an Image input component in Gradio.
+In Gradio, all the UI components (like buttons, text boxes, images, audio, etc.) are Python classes that you instantiate with parentheses.
+So gr.Image() creates an object of the Image component class. That object tells Gradio:
+“Hey, the input should be an image — let the user upload or draw one, and give it to my function as input.”
+inputs often need component objects because they’re more complex.
+outputs can use either a string shortcut (easy) or a component object (customizable).
+"text" is really just shorthand.
+This works for a bunch of common types:
+"text" → gr.Textbox()
+"image" → gr.Image()
+"label" → gr.Label() (for classification outputs)
+"audio" → gr.Audio()
+'''
