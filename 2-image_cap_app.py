@@ -1,3 +1,5 @@
+'''web application that generates captions for images using the BLIP model and the Gradio library for an interactive web interface'''
+
 import gradio as gr
 import numpy as np
 from PIL import Image
@@ -49,5 +51,5 @@ This works for a bunch of common types:
 iface.launch()
 
 '''TO RUN:
-python3 image_cap_app.py
+python3 2-image-cap-app.py
 '''

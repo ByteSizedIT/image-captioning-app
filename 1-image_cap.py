@@ -1,3 +1,5 @@
+'''simple image captioning AI printed in the terminal'''
+
 import requests
 from PIL import Image
 from transformers import AutoProcessor, BlipForConditionalGeneration
@@ -31,7 +33,7 @@ print(caption)
 
 
 '''TO RUN:
-python3 image_cap.py
+python3 1-image-cap.py
 '''
 
 
